@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Header() {
   return (
-    <header className="w-full flex flex-col items-center justify-center text-center py-10">
+    <header className="w-full flex flex-col items-center justify-center text-center py-10 bg-gray-800">
       <motion.h1
         className="text-4xl md:text-6xl font-bold text-white"
         initial={{ opacity: 0, y: -20 }}

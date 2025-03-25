@@ -32,9 +32,9 @@ export default function About() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.8 }}
       >
-        I'm <span className="text-blue-400 font-semibold">Roni Ganrai</span>, a passionate **Frontend Developer** and **Electronics Enthusiast**.  
-        I specialize in **building interactive web applications** and **developing electronic circuits**.  
-        With expertise in **React, JavaScript, and Embedded Systems**, I love turning ideas into reality.
+        I'm <span className="text-blue-400 font-semibold">Roni Ganrai</span>, a passionate <span className="text-blue-400 font-semibold">Frontend Developer</span> and <span className="text-blue-400 font-semibold">Electronics Enthusiast</span>.  
+        I specialize in <span className="text-blue-400 font-semibold">building interactive web applications</span> and <span className="text-blue-400 font-semibold">developing electronic circuits</span>.  
+        With expertise in <span className="text-blue-400 font-semibold">React, JavaScript, and Embedded Systems</span>, I love turning ideas into reality
       </motion.p>
 
       {/* Skills List */}
