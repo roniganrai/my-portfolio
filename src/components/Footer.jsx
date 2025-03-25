@@ -13,13 +13,25 @@ export default function Footer() {
         transition={{ duration: 0.6 }}
       >
         {/* Social Media Icons */}
-        <a href="https://github.com/RoniGanrai" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/RoniGanrai"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaGithub className="text-2xl hover:text-white transition" />
         </a>
-        <a href="https://www.linkedin.com/in/roniganrai" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.linkedin.com/in/roni-ganrai-20jun2004"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaLinkedin className="text-2xl hover:text-blue-400 transition" />
         </a>
-        <a href="https://twitter.com/RoniGanrai" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://twitter.com/RoniGanrai"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaTwitter className="text-2xl hover:text-blue-300 transition" />
         </a>
       </motion.div>

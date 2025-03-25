@@ -1,10 +1,16 @@
-"use client";  // Required for Next.js App Router
+"use client"; // Required for Next.js App Router
 
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { IoMdMail } from "react-icons/io";
+import { FaPhoneVolume } from "react-icons/fa6";
 
 export default function Contact() {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -17,7 +23,10 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="w-full flex flex-col items-center text-center py-16 px-6 bg-gray-800">
+    <section
+      id="contact"
+      className="w-full flex flex-col items-center text-center py-16 px-6 bg-gray-800"
+    >
       {/* Animated Heading */}
       <motion.h2
         className="text-4xl font-bold text-white"
@@ -78,8 +87,32 @@ export default function Contact() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.6 }}
       >
-        <p>Email: <a href="mailto:roniganrai2004@gmail.com" className="text-blue-400 hover:underline">roniganrai2004@gmail.com</a></p>
-        <p>Phone: <a href="tel:+917001736980" className="text-blue-400 hover:underline">+91 7001736980</a></p>
+        <div className="flex flex-row justify-center items-center">
+          <div className="text-[24px] mr-4 mt-1">
+            <IoMdMail className="text-blue-400" />
+          </div>
+          <div>
+            <a
+              href="mailto:roniganrai2029@gmail.com"
+              className="text-blue-400 hover:underline pb-2"
+            >
+              roniganrai2029@gmail.com
+            </a>
+          </div>
+        </div>
+        <div className="flex flex-row mt-4 items-center">
+          <div className="text-[20px] mr-4">
+            <FaPhoneVolume className="text-blue-400" />
+          </div>
+          <div>
+            <a
+              href="tel:+917001736980"
+              className="text-blue-400 hover:underline"
+            >
+              +91 7001736980
+            </a>
+          </div>
+        </div>
       </motion.div>
     </section>
   );
