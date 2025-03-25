@@ -7,7 +7,7 @@ export default function About() {
     <section id="about" className="w-full flex flex-col items-center text-center py-16 px-6 bg-gray-800">
       {/* Profile Image */}
       <motion.img
-        src="/profile.jpg" // Replace with your actual profile image
+        src="/pic.jpg" // Replace with your actual profile image
         alt="Roni Ganrai"
         className="w-40 h-40 rounded-full shadow-lg border-4 border-blue-500 mb-6"
         initial={{ opacity: 0, scale: 0.8 }}
